@@ -1,9 +1,12 @@
 package i_introduction._12_Extensions_On_Collections
 
-import util.TODO
-import util.doc12
+import java.util.*
 
-fun todoTask12(): Nothing = TODO(
+fun todoTask12(arrayListOf: ArrayList<Int>) {
+    arrayListOf.sortDescending()
+}
+
+        /*Nothing = TODO(
     """
         Task 12.
         In Kotlin standard library there are lots of extension functions that make the work with collections more convenient.
@@ -14,10 +17,11 @@ fun todoTask12(): Nothing = TODO(
         Read about read-only and mutable views on Java collections.
     """,
     documentation = doc12()
-)
+)*/
 
 fun task12(): List<Int> {
-    todoTask12()
-    return arrayListOf(1, 5, 2)
+    val list = arrayListOf(1, 5, 2)
+    todoTask12(list)
+    return list
 }
 
