@@ -3,7 +3,8 @@ package i_introduction._0_Hello_World
 import util.TODO
 import util.doc0
 
-fun todoTask0(): Nothing = TODO(
+fun todoTask0(): String {
+    return "OK"
     """
         Introduction:
 
@@ -18,10 +19,10 @@ fun todoTask0(): Nothing = TODO(
         Using 'references' you can usually navigate and see the code mentioned in the task description.
 
         To start please make the function 'task0' return "OK".
-    """,
-    documentation = doc0(),
-    references = { task0(); "OK" }
-)
+    """
+//    documentation = doc0(),
+//    references = { task0(); "OK" }
+}
 
 fun task0(): String {
     return todoTask0()

@@ -1,7 +1,10 @@
 package i_introduction._4_Lambdas
 
+import com.google.common.collect.Iterables
+import com.sun.org.apache.xpath.internal.operations.Bool
 import util.TODO
 import util.doc4
+import java.util.function.Predicate
 
 fun example() {
 
@@ -11,7 +14,11 @@ fun example() {
     sum(1, square(2)) == 5
 }
 
-fun todoTask4(collection: Collection<Int>): Nothing = TODO(
+fun todoTask4(collection: Collection<Int>): Boolean{
+
+
+    return collection.any(predicate = {element: Int ->(element%42 == 0)})
+}/*Nothing = TODO(
     """
         Task 4.
         Rewrite 'JavaCode4.task4()' in Kotlin using lambdas.
@@ -19,7 +26,8 @@ fun todoTask4(collection: Collection<Int>): Nothing = TODO(
         (Don't use the class 'Iterables').
     """,
     documentation = doc4(),
-    references = { JavaCode4().task4(collection) })
+    references = { JavaCode4().task4(collection) })*/
+
 
 fun task4(collection: Collection<Int>): Boolean = todoTask4(collection)
 
