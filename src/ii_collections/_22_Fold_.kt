@@ -16,6 +16,8 @@ fun Shop.getSetOfProductsOrderedByEveryCustomer(): Set<Product> {
     // Return the set of products ordered by every customer
     return customers.fold(allOrderedProducts, {
         orderedByAll, customer ->
-        todoCollectionTask()
-    })
+//        todoCollectionTask()
+        val orderedProducts = customer.orders.flatMap { it.products }.toSet()
+        orderedByAll.intersect(orderedProducts)
+})
 }
