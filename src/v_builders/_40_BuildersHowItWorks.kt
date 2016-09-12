@@ -32,7 +32,7 @@ fun task40() = linkedMapOf<Int, Answer>(
     b. function declaration
     c. function invocation
  */
-        1 to insertAnswerHere(),
+        Pair(1, c),
 
 /*
 2. In the Kotlin code
@@ -49,7 +49,7 @@ fun task40() = linkedMapOf<Int, Answer>(
   b. argument name
   c. argument value
  */
-        2 to insertAnswerHere(),
+        Pair(2, b),
 
 /*
 3. The block
@@ -62,7 +62,7 @@ from the previous question is:
   c. something mysterious
 
  */
-        3 to insertAnswerHere(),
+        Pair(3,b),
 
 /*
 4. For the code
@@ -84,5 +84,5 @@ which of the following is true:
                   }
             }
  */
-        4 to insertAnswerHere()
+        Pair(4,c)
 )
